@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Uma Música para Você</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div class="center-content">
+        <img src="static/imagens/ni1T-i.gif" alt="Gif Especial" class="center-gif">
+        <p class="message">Você quer saber uma música que eu dedicaria a você?</p>
+        <div class="buttons">
+            <button id="yesButton" onclick="showMessage()">Sim</button>
+            <button id="noButton" onmouseover="moveNoButton()">Não</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>I Was Made for Lovin' You</h2>
+            <div class="album-cover"></div>
+            <audio id="audio" controls>
+                <source src="static/I Was Made For Lovin' You.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="lyrics-section">
+                <div class="lyrics">
+                    <h3>Letra</h3>
+                    <p>
+                        And tonight<br>
+                        I wanna lay it at your feet<br>
+                        'Cause, girl, I was made for you<br>
+                        And, girl, you were made for me<br><br>
+
+                        I was made for loving you, baby<br>
+                        You were made for loving me<br>
+                        And I can't get enough of you, baby<br>
+                        Can you get enough of me?<br><br>
+
+                        Tonight<br>
+                        I wanna see it in your eyes<br>
+                        Feel the magic<br>
+                        There's something that drives me wild<br><br>
+
+                        And tonight<br>
+                        We're going to make it all come true<br>
+                        'Cause, girl, you were made for me<br>
+                        And, girl, I was made for you<br><br>
+
+                        I was made for loving you, baby<br>
+                        You were made for loving me<br>
+                        And I can't get enough of you, baby<br>
+                        Can you get enough of me?<br><br>
+
+                        I was made for loving you, baby<br>
+                        You were made for loving me<br>
+                        And I can give it all to you, baby<br>
+                        Can you give it all to me?<br><br>
+
+                        Oh, oh, oh<br>
+                        Can't get enough<br>
+                        Oh, oh<br>
+                        I can't get enough<br>
+                        Oh, oh, oh<br>
+                        I can't get enough<br>
+                        Yeah<br><br>
+
+                        Do, do, do, do, do, do, do, do, do<br>
+                        Do, do, do, do, do, do, do<br><br>
+
+                        I was made for loving you, baby<br>
+                        You were made for loving me<br>
+                        And I can't get enough of you, baby<br>
+                        Can you get enough of me?<br><br>
+
+                        Oh, I was made<br>
+                        You were made<br>
+                        I can't get enough<br>
+                        No, I can't get enough<br><br>
+
+                        I was made for loving you, baby<br>
+                        You were made for loving me
+                    </p>
+                </div>
+                <div class="translation">
+                    <h3>Tradução</h3>
+                    <p>
+                        Hmmm, sim<br><br>
+
+                        Du, du, du, du, du, du, du, du, du<br>
+                        Du, du, du, du, du, du, du<br><br>
+
+                        Esta noite<br>
+                        Eu quero dar tudo a você<br>
+                        Na escuridão<br>
+                        Há tanto que eu quero fazer<br><br>
+
+                        E esta noite<br>
+                        Eu quero deitar aos seus pés<br>
+                        Porque, garota, eu fui feito para você<br>
+                        E, garota, você foi feita para mim<br><br>
+
+                        Eu fui feito para amar você, querida<br>
+                        Você foi feita para me amar<br>
+                        E eu não consigo me cansar de você, querida<br>
+                        Você pode se cansar de mim?<br><br>
+
+                        Esta noite<br>
+                        Eu quero ver isto em seus olhos<br>
+                        Sinta a mágica<br>
+                        Há algo que me deixa selvagem<br><br>
+
+                        E esta noite<br>
+                        Nós vamos fazer tudo se tornar realidade<br>
+                        Porque, garota, você foi feita para mim<br>
+                        E, garota, eu fui feito para você<br><br>
+
+                        Eu fui feito para amar você, querida<br>
+                        Você foi feita para me amar<br>
+                        E eu não consigo me cansar de você, querida<br>
+                        Você pode se cansar de mim?<br><br>
+
+                        Eu fui feito para amar você, querida<br>
+                        Você foi feita para me amar<br>
+                        E eu posso dar tudo pra você, querida<br>
+                        Você pode dar tudo pra mim?<br><br>
+
+                        Oh, oh, oh<br>
+                        Não consigo me cansar<br>
+                        Oh, oh<br>
+                        Não consigo me cansar<br>
+                        Oh, oh, oh<br>
+                        Não consigo me cansar<br>
+                        Sim<br><br>
+
+                        Du, du, du, du, du, du, du, du, du<br>
+                        Du, du, du, du, du, du, du<br><br>
+
+                        Eu fui feito para amar você, querida<br>
+                        Você foi feita para me amar<br>
+                        E eu não consigo me cansar de você, querida<br>
+                        Você consegue se cansar de mim?<br><br>
+
+                        Oh, eu fui feito<br>
+                        Você foi feita<br>
+                        Não consigo me cansar<br>
+                        Não, eu não consigo me cansar<br><br>
+
+                        Eu fui feito para amar você, querida<br>
+                        Você foi feita para me amar
+                    </p>
+                </div>
+            </div>
+            <button class="continue-button" onclick="window.location.href='final_page.php'">Continuar</button>
+        </div>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
